@@ -20,7 +20,7 @@ $(document).ready(function () {
             // create a new LI node with the id set to the customer id
             var $li = $('<li>', {id: elem.id});
             var $p = $('<p>');
-            $p.text(elem.firstName + ' ' + elem.lastName + ' ' + elem.shoutOut + ' ' + elem.id);
+            $p.text(elem.firstName + ' ' + elem.shoutOut);
             $li.append($p);
             $results.append($li);
 
