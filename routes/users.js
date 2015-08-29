@@ -14,7 +14,7 @@ router.get('/:id?', function(req, res, next) {
       next(err);
     } else {
       var obj = JSON.parse(data);
-      var user = obj; // if no user is found, then return all customers
+      var user = obj; // if no user is found, then return all users
 
       obj.forEach(function(elem){
         if(elem.id == id){

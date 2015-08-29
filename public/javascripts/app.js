@@ -5,7 +5,7 @@ $(document).ready(function () {
     var $results = $('#content');
 
 
-    // On doc ready, do an ajax call to get all customers
+    // On doc ready, do an ajax call to get all users
     $.ajax({
         type: 'GET',
         dataType: 'json',
@@ -13,18 +13,17 @@ $(document).ready(function () {
     }).done(function (data) {
         // same as success
 
-        // for each customer, create an LI with their name in a P tag
+        // for each user, create a new p
 
         data.forEach(function (elem) {
 
-            // create a new LI node with the id set to the customer id
-            var $li = $('<li>', {id: elem.id});
+        // create a new p node
             var $p = $('<p>');
-            $p.text(elem.firstName + ' ' + elem.shoutOut);
-            $li.append($p);
-            $results.append($li);
-
+            $p.text(elem.firstName + ': ' + elem.shoutOut);
+            $p.append($p);
+            $results.append($p);
         });
+
     }).fail(function (jqXHR, textStatus, errorThrown) {
         // same as error
         console.log('There was an error: ', errorThrown);
