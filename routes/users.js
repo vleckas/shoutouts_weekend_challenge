@@ -6,25 +6,25 @@ var path = require('path');
 /* GET users listing. */
 router.get('/:id?', function(req, res, next) {
 
-  var id = req.params.id;
+    var id = req.params.id;
 
-  var file = path.join(__dirname, '../models/users.json');
-  fs.readFile(file, 'utf8', function(err, data){
-    if(err){
-      next(err);
-    } else {
-      var obj = JSON.parse(data);
-      var user = obj; // if no user is found, then return all users
+    var file = path.join(__dirname, '../models/users.json');
+    fs.readFile(file, 'utf8', function(err, data){
+        if(err){
+            next(err);
+        } else {
+            var obj = JSON.parse(data);
+            var user = obj; // if no user is found, then return all users
 
-      obj.forEach(function(elem){
-        if(elem.id == id){
-          user = elem;
+            obj.forEach(function(elem){
+                if(elem.id == id){
+                    user = elem;
+                }
+            });
+
+            res.json(user);
         }
-      });
-
-      res.json(user);
-    }
-  })
+    })
 });
 
 module.exports = router;

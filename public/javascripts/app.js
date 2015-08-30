@@ -17,7 +17,7 @@ $(document).ready(function () {
 
         data.forEach(function (elem) {
 
-        // create a new p node
+            // create a new p node
             var $p = $('<p>');
             $p.text(elem.firstName + ': ' + elem.shoutOut);
             $p.append($p);
