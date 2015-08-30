@@ -1,10 +1,4 @@
 [
-  {
-    "firstName": "Vas",
-    "shoutOut": "Thanks to Vas for being very helpful and asking great questions.",
-    "id": "1"
-  },
-
 
   {
     "firstName": "Allan",
@@ -122,6 +116,12 @@
     "firstName": "Brendan",
     "shoutOut": "Thanks to Brendan for providing assistance and explaining some of the topics discussed today.",
     "id": "0"
+  },
+
+  {
+    "firstName": "Vas",
+    "shoutOut": "Thanks to Vas for being very helpful and asking great questions.",
+    "id": "1"
   }
 
 

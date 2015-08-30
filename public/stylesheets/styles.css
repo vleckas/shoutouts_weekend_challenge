@@ -1,0 +1,9 @@
+.cover-container {
+    width: 80%;
+    align-content: center;
+}
+
+p {
+    margin: 35px;
+    font-weight: 200;
+}

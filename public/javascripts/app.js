@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
     // get our content UL
-    var $results = $('#content');
+    var $shoutouts = $('#shoutouts');
 
 
     // On doc ready, do an ajax call to get all users
@@ -21,7 +21,7 @@ $(document).ready(function () {
             var $p = $('<p>');
             $p.text(elem.firstName + ': ' + elem.shoutOut);
             $p.append($p);
-            $results.append($p);
+            $shoutouts.append($p);
         });
 
     }).fail(function (jqXHR, textStatus, errorThrown) {
