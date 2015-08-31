@@ -1,6 +1,18 @@
 [
 
   {
+    "firstName": "Brendan",
+    "shoutOut": "Thanks to Brendan for providing assistance and explaining some of the topics discussed today.",
+    "id": "0"
+  },
+
+  {
+    "firstName": "Vas",
+    "shoutOut": "Thanks to Vas for being very helpful and asking great questions.",
+    "id": "1"
+  },
+
+  {
     "firstName": "Allan",
     "shoutOut": "Thanks to Allan for his unique brand of humor and ability to lighten the mood!",
     "id": "2"
@@ -109,20 +121,6 @@
     "firstName": "Shawn",
     "shoutOut": "Shout out to shawn for hooking me up in my time of need with the jquery .empty() and .remove() methods, as i was stuck.",
     "id": "17"
-  },
-
-
-  {
-    "firstName": "Brendan",
-    "shoutOut": "Thanks to Brendan for providing assistance and explaining some of the topics discussed today.",
-    "id": "0"
-  },
-
-  {
-    "firstName": "Vas",
-    "shoutOut": "Thanks to Vas for being very helpful and asking great questions.",
-    "id": "1"
   }
-
 
 ]
